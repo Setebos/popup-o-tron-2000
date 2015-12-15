@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Popup-o-tron 2000",
+  "description": "This extension will display a popup on some websites",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.lemonde.fr/*"],
+      "css": ["jquery-ui.min.css", "main.css"],
+      "js": ["jquery-1.11.3.min.js", "jquery-ui.min.js", "popup.js"]
+    }
+  ]
+}
